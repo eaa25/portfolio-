@@ -2190,3 +2190,472 @@
     }
 
 }
+
+
+/* =====================================================
+   FINAL MOBILE WINDOW RESPONSIVE FIX
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    /*
+       All portfolio windows use almost the full phone width.
+       The content itself scrolls vertically inside the window.
+    */
+
+    .portfolio-window {
+        top: 5%;
+        left: 50%;
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+        border-radius: 12px;
+    }
+
+    .window-header {
+        height: 44px;
+    }
+
+    .window-header > span {
+        max-width: calc(100% - 90px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+    }
+
+    .window-content {
+        height: calc(100% - 44px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+    /* -------------------------------------------------
+       GENERAL PROJECT CONTENT
+       ------------------------------------------------- */
+
+    .bla-sol-content,
+    .cph-content,
+    .hidden-places-content,
+    .cat-bell-content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    .bla-sol-content {
+        padding: 22px 16px 40px;
+    }
+
+    .cph-content {
+        padding: 22px 16px 40px;
+    }
+
+    .hidden-places-content {
+        padding: 22px 16px 40px;
+    }
+
+    .cat-bell-content {
+        padding: 22px 16px 45px;
+    }
+
+
+    .bla-sol-content h2,
+    .hidden-places-content h2,
+    .cat-bell-content h2 {
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .bla-sol-content .project-subtitle,
+    .cph-content .project-subtitle,
+    .hidden-places-content .project-subtitle,
+    .cat-bell-content .project-subtitle {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .bla-sol-content .project-info p,
+    .cph-content .project-info p,
+    .hidden-places-content .project-info p,
+    .cat-bell-content .project-info p {
+        font-size: 13px;
+    }
+
+    .bla-sol-content .project-link,
+    .cph-content .project-link,
+    .hidden-places-content .project-link,
+    .cat-bell-content .project-link {
+        font-size: 13px;
+        line-height: 1.35;
+    }
+
+    .bla-sol-content .project-description,
+    .cph-content .project-description,
+    .hidden-places-content .project-description,
+    .cat-bell-content .project-description {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+
+    /* -------------------------------------------------
+       BLÅ SOL
+       ------------------------------------------------- */
+
+    .bla-sol-project-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+    }
+
+    .bla-sol-content .project-description {
+        margin-bottom: 28px;
+    }
+
+    .bla-sol-images {
+        width: 100%;
+        gap: 22px;
+        padding-bottom: 25px;
+    }
+
+    .bla-sol-image {
+        width: 100%;
+    }
+
+    .bla-sol-timetable img,
+    .bla-sol-404 img,
+    .bla-sol-map img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+
+    /* -------------------------------------------------
+       HIDDEN PLACES
+       ------------------------------------------------- */
+
+    .hidden-places-project-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+    }
+
+    .hidden-places-content .project-description {
+        margin-bottom: 28px;
+    }
+
+    .hidden-places-images {
+        width: 100%;
+        gap: 22px;
+        margin-top: 22px;
+        padding-bottom: 25px;
+    }
+
+    .hidden-places-image,
+    .hidden-places-image img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* -------------------------------------------------
+       CPH FASHION WEEK
+       ------------------------------------------------- */
+
+    .cph-project-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+    }
+
+    .cph-content .project-description {
+        margin-bottom: 25px;
+    }
+
+    .cph-image-container {
+        width: 100%;
+        margin: 15px 0 30px;
+    }
+
+    .cph-project-image {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cph-phone-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+        margin: 20px 0 35px;
+    }
+
+    .cph-phone-image {
+        width: calc((100% - 16px) / 3);
+        max-width: calc((100% - 16px) / 3);
+        height: auto;
+    }
+
+
+    /* -------------------------------------------------
+       CAT BELL
+       ------------------------------------------------- */
+
+    /*
+       The desktop Cat Bell layout stays exactly the same.
+       On phones, the six screenshots become two columns so
+       they remain readable and never get squeezed too small.
+    */
+
+    .cat-bell-project-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+    }
+
+    .cat-bell-content .project-description {
+        margin-bottom: 28px;
+    }
+
+    .cat-bell-images {
+        width: 100%;
+        gap: 28px;
+        padding-bottom: 25px;
+    }
+
+    .cat-bell-image img {
+        max-width: 100%;
+    }
+
+    .cat-bell-image.logo-image img {
+        width: 200px;
+        max-width: 75%;
+    }
+
+    .cat-bell-image.bell-image img {
+        width: 120px;
+        max-width: 60%;
+    }
+
+    .cat-bell-image.angel-image img {
+        width: 190px;
+        max-width: 70%;
+    }
+
+    .cat-bell-mockup-row,
+    .cat-bell-lower-row {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 12px;
+        margin-top: 18px;
+    }
+
+    .cat-bell-mockup-row .mockup-image,
+    .cat-bell-lower-row .mockup-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .cat-bell-mockup-row .mockup-image img,
+    .cat-bell-lower-row .mockup-image img {
+        width: 100%;
+        max-width: 155px;
+        height: auto;
+    }
+
+
+    /* -------------------------------------------------
+       ABOUT ME
+       ------------------------------------------------- */
+
+    #about-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+        top: 5%;
+    }
+
+    .about-content {
+        padding: 25px 18px 45px;
+    }
+
+    .about-intro {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-photo {
+        width: 190px;
+        height: 190px;
+        flex: none;
+    }
+
+    .about-intro-text {
+        min-height: 0;
+        gap: 18px;
+    }
+
+    .about-intro-text h2 {
+        font-size: 20px;
+    }
+
+    .about-intro-text p,
+    .about-content > p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* -------------------------------------------------
+       NOTES
+       ------------------------------------------------- */
+
+    #notes-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+        top: 5%;
+    }
+
+    .notes-paper {
+        padding: 25px 18px 40px;
+    }
+
+    .notes-paper h1 {
+        font-size: 25px;
+    }
+
+    .notes-intro {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .notes-paper h2 {
+        font-size: 19px;
+    }
+
+    .notes-paper h3 {
+        font-size: 17px;
+    }
+
+    .notes-paper p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .notes-book {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .notes-book-cover {
+        width: 120px;
+        height: 172px;
+        flex: none;
+    }
+
+
+    /* -------------------------------------------------
+       CONTACT WINDOWS
+       ------------------------------------------------- */
+
+    #email-window,
+    #call-window,
+    #contact-window {
+        width: 90vw;
+        max-width: 90vw;
+        top: 10%;
+    }
+
+    .contact-window-content {
+        padding: 30px 22px;
+    }
+
+    .contact-window-content h2 {
+        font-size: 22px;
+    }
+
+    .contact-window-content p {
+        font-size: 14px;
+    }
+
+
+    /* -------------------------------------------------
+       HOBBIES
+       ------------------------------------------------- */
+
+    .hobbies-content {
+        padding: 25px 18px;
+    }
+
+    .hobby-folders {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(70px, 1fr));
+        justify-content: center;
+        gap: 28px 20px;
+        padding: 5px;
+    }
+
+    .hobby-folder {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .hobby-sub-window {
+        width: 94vw;
+        max-width: 94vw;
+        height: 82vh;
+        max-height: 82vh;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .portfolio-window {
+        width: 96vw;
+        max-width: 96vw;
+        height: 84vh;
+        max-height: 84vh;
+        top: 4%;
+    }
+
+    .window-header > span {
+        font-size: 15px;
+        max-width: calc(100% - 80px);
+    }
+
+    .cat-bell-mockup-row,
+    .cat-bell-lower-row {
+        gap: 18px 8px;
+    }
+
+    .cat-bell-mockup-row .mockup-image img,
+    .cat-bell-lower-row .mockup-image img {
+        max-width: 140px;
+    }
+
+    .cph-phone-container {
+        gap: 6px;
+    }
+
+    .cph-phone-image {
+        width: calc((100% - 12px) / 3);
+        max-width: calc((100% - 12px) / 3);
+    }
+}

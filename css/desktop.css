@@ -594,3 +594,199 @@
 
     appearance: none;
 }
+
+/* =====================================================
+   FINAL MOBILE RESPONSIVE FIX
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    /*
+       The phone version keeps the Mac-style interface,
+       but everything is resized so it fits inside the screen.
+    */
+
+    .desktop {
+        width: 100%;
+        height: 100dvh;
+        min-height: 100dvh;
+        overflow: hidden;
+    }
+
+
+    /* TOP MENU */
+
+    .menu-bar {
+        width: 100%;
+        height: 44px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .menu-logo {
+        width: 26px;
+        height: 26px;
+        flex: 0 0 26px;
+        margin: 0 7px 0 0;
+    }
+
+    .menu-logo img {
+        width: 23px;
+        height: 23px;
+    }
+
+    .menu-name {
+        flex: 0 0 auto;
+        margin: 0 14px 0 0 !important;
+        font-size: 12px !important;
+        line-height: 1;
+    }
+
+    .menu-link {
+        flex: 0 0 auto;
+        margin: 0 12px 0 0 !important;
+        font-size: 12px !important;
+        line-height: 1;
+    }
+
+    /*
+       The status icons and clock take too much space
+       on a phone, so the project area gets that space instead.
+    */
+
+    .menu-right {
+        display: none;
+    }
+
+
+    /* DESKTOP PROJECT ICONS */
+
+    .desktop-icon {
+        font-size: 11px;
+        gap: 4px;
+    }
+
+    .icon-image {
+        width: 76px;
+        height: 60px;
+        border-width: 3px;
+    }
+
+    .hobby-image {
+        width: 76px;
+        height: 60px;
+    }
+
+
+    /*
+       Keep the project folders comfortably inside
+       the phone screen.
+    */
+
+    .icon-hidden-places {
+        left: 18%;
+        top: 16%;
+    }
+
+    .icon-bla-sol {
+        right: 14%;
+        top: 13%;
+    }
+
+    .icon-cph {
+        left: 10%;
+        top: 57%;
+    }
+
+    .icon-cat {
+        right: 10%;
+        top: 57%;
+    }
+
+
+    /* DOCK */
+
+    .dock {
+        left: 50%;
+        bottom: max(8px, env(safe-area-inset-bottom));
+        width: max-content;
+        max-width: calc(100vw - 20px);
+        gap: 2px;
+        padding: 6px 7px;
+        border-radius: 14px;
+        box-sizing: border-box;
+    }
+
+    .dock-icon {
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+    }
+
+    .dock-icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 400px) {
+
+    .menu-bar {
+        padding: 0 6px;
+    }
+
+    .menu-logo {
+        width: 24px;
+        height: 24px;
+        flex-basis: 24px;
+        margin-right: 5px;
+    }
+
+    .menu-logo img {
+        width: 21px;
+        height: 21px;
+    }
+
+    .menu-name {
+        margin-right: 10px !important;
+        font-size: 11px !important;
+    }
+
+    .menu-link {
+        margin-right: 8px !important;
+        font-size: 11px !important;
+    }
+
+    .icon-image {
+        width: 70px;
+        height: 55px;
+    }
+
+    .hobby-image {
+        width: 70px;
+        height: 55px;
+    }
+
+    .desktop-icon {
+        font-size: 10px;
+    }
+
+    .dock {
+        max-width: calc(100vw - 12px);
+        padding: 5px 6px;
+    }
+
+    .dock-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .dock-icon img {
+        width: 36px;
+        height: 36px;
+    }
+}
