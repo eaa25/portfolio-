@@ -1,0 +1,59 @@
+/*
+    VARIABLES
+
+    This is where we keep the important colours
+    and measurements for the whole website.
+
+    This makes it MUCH easier to change the design later.
+*/
+
+
+:root {
+
+    /*
+        YOUR MAIN GREEN
+
+        IMPORTANT:
+        I am keeping your exact colour:
+        #9BA67C
+    */
+
+    --green: #9BA67C;
+
+
+    /*
+        Supporting green shades.
+
+        These are NOT replacing your main green.
+        They are just lighter/darker versions
+        that we can use for small details.
+    */
+
+    --green-light: #B8C19C;
+
+    --green-dark: #7F895F;
+
+
+    /* Basic colours */
+
+    --black: #202020;
+
+    --white: #FFFFFF;
+
+
+    /*
+        A slightly transparent white.
+
+        This will help us create the glassy
+        computer interface later.
+    */
+
+    --glass: rgba(255, 255, 255, 0.28);
+
+
+    /*
+        How rounded our computer windows should be.
+    */
+
+    --radius: 10px;
+}

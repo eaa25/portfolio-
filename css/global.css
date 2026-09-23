@@ -1,0 +1,127 @@
+/*
+    GLOBAL CSS
+
+    These are rules that apply to the
+    whole website.
+*/
+
+
+/*
+    Make sure the page takes up
+    the entire screen.
+*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+    General body styling.
+*/
+
+body {
+
+    /*
+        Arial is our temporary font.
+
+        Later we can choose a font that matches
+        your screenshots more closely.
+    */
+
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    color: var(--black);
+
+
+    /*
+        We don't want the normal browser
+        scrollbar on the desktop.
+    */
+
+    overflow: hidden;
+}
+
+
+/*
+    This class is used whenever
+    we want to hide something.
+*/
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+    Make buttons feel clickable.
+*/
+
+button {
+    cursor: pointer;
+}
+
+/* =====================================================
+   PORTFOLIO TYPOGRAPHY
+   ===================================================== */
+
+/*
+   SF Pro Display is the font used throughout
+   the portfolio.
+
+   500 = Medium
+   700 = Bold
+*/
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: "SF Pro Display",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        sans-serif;
+
+    font-weight: 500;
+}
+
+
+/* Normal text */
+
+p,
+li,
+span,
+a {
+    font-weight: 500;
+}
+
+
+/* Bold text */
+
+strong,
+b {
+    font-weight: 700;
+}
+
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "SF Pro Display",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        sans-serif;
+
+    font-weight: 700;
+}

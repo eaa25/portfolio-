@@ -1,0 +1,2192 @@
+/* =====================================================
+   PORTFOLIO WINDOWS
+   ===================================================== */
+
+
+/* =====================================================
+   TYPOGRAPHY
+   ===================================================== */
+
+/*
+    One typography system for all text inside the
+    portfolio windows.
+
+    SF Pro Display is used first, followed by Apple's
+    normal system fonts as fallbacks.
+*/
+
+.portfolio-window,
+.portfolio-window * {
+    font-family:
+        "SF Pro Display",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        sans-serif;
+}
+
+
+/* =====================================================
+   GENERAL WINDOW
+   ===================================================== */
+
+.portfolio-window {
+    position: absolute;
+
+    top: 8%;
+    left: 50%;
+
+    transform:
+        translateX(-50%)
+        scale(0.96);
+
+    width: min(88vw, 1350px);
+    height: min(72vh, 620px);
+
+    display: none;
+
+    background: #f7f7f7;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.22);
+
+    overflow: hidden;
+
+    z-index: 500;
+
+    opacity: 0;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.portfolio-window.active {
+    display: block;
+
+    opacity: 1;
+
+    transform:
+        translateX(-50%)
+        scale(1);
+}
+
+
+/* =====================================================
+   WINDOW HEADER
+   ===================================================== */
+
+.window-header {
+    position: relative;
+
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f7f7;
+
+    border-bottom:
+        1px solid #d8d8d8;
+
+    flex-shrink: 0;
+}
+
+
+.window-header > span {
+    position: absolute;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   MAC TRAFFIC LIGHTS
+   ===================================================== */
+
+.window-header::before {
+    content: "";
+
+    position: absolute;
+
+    left: 16px;
+    top: 17px;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #ff5f57;
+
+    box-shadow:
+        21px 0 0 #febc2e,
+        42px 0 0 #28c840;
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   CLOSE WINDOW BUTTON
+   ===================================================== */
+
+.close-window {
+    position: absolute;
+
+    top: 7px;
+    left: 7px;
+
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: transparent;
+
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   WINDOW CONTENT
+   ===================================================== */
+
+.window-content {
+    width: 100%;
+
+    height:
+        calc(100% - 48px);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   PLACEHOLDER PROJECT WINDOWS
+   ===================================================== */
+
+.large-placeholder {
+    width: 100%;
+
+    min-height: 400px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+
+.large-placeholder.purple {
+    background: #d8d0e8;
+}
+
+
+.large-placeholder.blue {
+    background: #d0dce8;
+}
+
+
+.large-placeholder.pink {
+    background: #e8d0dc;
+}
+
+
+.large-placeholder.grey {
+    background: #dddddd;
+}
+
+
+/* =====================================================
+   BLÅ SOL
+   ===================================================== */
+
+.bla-sol-project-window {
+    width: min(1000px, 85vw);
+
+    height:
+        min(72vh, 620px);
+}
+
+
+.bla-sol-content {
+    padding:
+        35px 45px 60px;
+
+    box-sizing: border-box;
+}
+
+
+.bla-sol-content h2 {
+    margin:
+        0 0 32px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.bla-sol-content .project-subtitle {
+    margin:
+        0 0 4px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.bla-sol-content .project-info p {
+    margin:
+        4px 0;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+.bla-sol-content .project-info strong {
+    font-weight: 700;
+}
+
+
+.bla-sol-content .project-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 30px;
+}
+
+
+.bla-sol-content .project-link {
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+}
+
+
+.bla-sol-content .project-link:hover {
+    text-decoration: underline;
+}
+
+
+.bla-sol-content .project-description {
+    max-width: 1000px;
+
+    margin:
+        0 0 50px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   CPH FASHION WEEK
+   ===================================================== */
+
+.cph-project-window {
+    width: min(1000px, 85vw);
+
+    height:
+        min(72vh, 620px);
+}
+
+
+.cph-content {
+    padding:
+        35px 45px 60px;
+
+    box-sizing: border-box;
+}
+
+
+.cph-content .project-subtitle {
+    margin:
+        0 0 20px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.cph-content .project-info p {
+    margin:
+        4px 0;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+.cph-content .project-info strong {
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   GENERAL PROJECT LINKS
+   ===================================================== */
+
+.project-links {
+    display: flex;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.project-link {
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   CPH LINKS
+   ===================================================== */
+
+.cph-content .project-links {
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 30px;
+}
+
+
+.cph-content .project-link {
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+}
+
+
+.cph-content .project-description {
+    max-width: 800px;
+
+    margin-bottom: 40px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+.cph-content h3 {
+    margin:
+        35px 0 15px;
+
+    font-size: 20px;
+
+    font-weight: 700;
+}
+
+
+.cph-image-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin:
+        20px 0 45px;
+}
+
+
+.cph-project-image {
+    width: 100%;
+
+    max-width: 900px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+}
+
+
+/* =====================================================
+   CPH PHONE SCREENSHOTS
+   ===================================================== */
+
+.cph-phone-container {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    width: 100%;
+
+    margin:
+        25px 0 50px;
+}
+
+
+.cph-phone-image {
+    width: 190px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   HIDDEN PLACES
+   ===================================================== */
+
+.hidden-places-project-window {
+    width: min(1000px, 85vw);
+
+    height:
+        min(72vh, 620px);
+}
+
+
+.hidden-places-content {
+    padding:
+        35px 45px 60px;
+
+    box-sizing: border-box;
+}
+
+
+.hidden-places-content h2 {
+    margin:
+        0 0 32px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.hidden-places-content .project-subtitle {
+    margin:
+        0 0 4px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.hidden-places-content .project-info p {
+    margin:
+        4px 0;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+.hidden-places-content .project-info strong {
+    font-weight: 700;
+}
+
+
+.hidden-places-content .project-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 30px;
+}
+
+
+.hidden-places-content .project-link {
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+}
+
+
+.hidden-places-content .project-link:hover {
+    text-decoration: underline;
+}
+
+
+.hidden-places-content .project-description {
+    max-width: 1000px;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   HIDDEN PLACES IMAGES
+   ===================================================== */
+
+.hidden-places-images {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top: 40px;
+
+    padding-bottom: 30px;
+}
+
+
+.hidden-places-image {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.hidden-places-image img {
+    width: 100%;
+
+    max-width: 900px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 6px;
+}
+
+
+/* =====================================================
+   ABOUT ME
+   ===================================================== */
+
+#about-window {
+    width: min(1050px, 90vw);
+
+    height:
+        min(675px, 78vh);
+
+    top: 5%;
+}
+
+
+.about-content {
+    padding:
+        50px 48px 70px;
+
+    box-sizing: border-box;
+}
+
+
+.about-intro {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 10px;
+}
+
+
+.about-photo {
+    flex:
+        0 0 310px;
+
+    width: 310px;
+
+    height: 310px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #d9d9d9;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+.about-photo img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.about-intro-text {
+    flex: 1;
+
+    min-width: 0;
+
+    min-height: 310px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.about-intro-text h2 {
+    margin: 0;
+
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+}
+
+
+.about-intro-text p {
+    margin: 0;
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+}
+
+
+.about-content > p {
+    margin:
+        0 0 25px;
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   EMAIL / PHONE / CONTACT
+   ===================================================== */
+
+#email-window,
+#call-window,
+#contact-window {
+    width:
+        min(520px, 75vw);
+
+    top: 14%;
+}
+
+
+#email-window {
+    height:
+        min(280px, 45vh);
+}
+
+
+#call-window {
+    height:
+        min(280px, 45vh);
+}
+
+
+#contact-window {
+    height:
+        min(330px, 50vh);
+}
+
+
+/* =====================================================
+   CONTACT WINDOWS
+   ===================================================== */
+
+.contact-window-content {
+    padding:
+        45px 35px;
+}
+
+
+.contact-window-content h2 {
+    margin:
+        0 0 20px;
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+
+.contact-window-content p {
+    margin:
+        0 0 22px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+.contact-window-content strong {
+    font-weight: 700;
+}
+
+
+.contact-window-content a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+
+.contact-window-content a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   NOTES
+   ===================================================== */
+
+#notes-window {
+    width:
+        min(1000px, 85vw);
+
+    height:
+        min(650px, 72vh);
+
+    top: 10%;
+}
+
+
+.notes-content {
+    padding: 0;
+
+    background: #fff;
+}
+
+
+/* =====================================================
+   NOTES PAPER
+   ===================================================== */
+
+.notes-paper {
+    width: 100%;
+
+    min-height: 100%;
+
+    overflow-y: auto;
+
+    padding:
+        45px 65px 70px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+
+    font-style: normal;
+}
+
+
+.notes-paper h1 {
+    margin:
+        0 0 15px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #222;
+
+    font-style: normal;
+}
+
+
+.notes-intro {
+    max-width: 760px;
+
+    margin:
+        0 0 35px;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+
+    color: #444;
+
+    font-style: normal;
+}
+
+
+.notes-paper h2 {
+    margin:
+        35px 0 15px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #222;
+
+    font-style: normal;
+}
+
+
+.notes-paper h3 {
+    margin:
+        0 0 15px;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #222;
+
+    font-style: normal;
+}
+
+
+.notes-paper p {
+    max-width: 760px;
+
+    margin:
+        0 0 15px;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 500;
+
+    color: #444;
+
+    font-style: normal;
+}
+
+
+/* =====================================================
+   NOTES SKILLS
+   ===================================================== */
+
+.notes-skills {
+    max-width: 800px;
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.notes-skills li {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 17px;
+
+    padding-left: 18px;
+
+    border-left:
+        3px solid #9BA67C;
+}
+
+
+.notes-skills strong {
+    font-size: 16px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #222;
+
+    font-style: normal;
+}
+
+
+.notes-skills span {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+
+    color: #555;
+
+    font-style: normal;
+}
+
+
+/* =====================================================
+   NOTES BOOK
+   ===================================================== */
+
+.notes-book {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 28px;
+
+    max-width: 800px;
+
+    margin-top: 5px;
+
+    margin-bottom: 10px;
+}
+
+
+.notes-book-cover {
+    width: 150px;
+
+    height: 215px;
+
+    flex:
+        0 0 150px;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+
+    background: #eee;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.notes-book-cover img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.notes-book-text {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.notes-book-text h3 {
+    margin:
+        0 0 15px;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #222;
+
+    font-style: normal;
+}
+
+
+.notes-book-text p {
+    margin-bottom: 14px;
+
+    font-style: normal;
+}
+
+
+.notes-paper em,
+.notes-paper i {
+    font-style: normal;
+}
+
+
+/* =====================================================
+   CAT BELL
+   ===================================================== */
+
+.cat-bell-project-window {
+    width: min(1000px, 85vw);
+
+    height:
+        min(72vh, 620px);
+}
+
+
+.cat-bell-content {
+    padding:
+        35px 45px 80px;
+
+    box-sizing: border-box;
+}
+
+
+.cat-bell-content h2 {
+    margin:
+        0 0 32px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.cat-bell-content .project-subtitle {
+    margin:
+        0 0 4px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+.cat-bell-content .project-info p {
+    margin:
+        4px 0;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+
+.cat-bell-content .project-info strong {
+    font-weight: 700;
+}
+
+
+.cat-bell-content .project-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 30px;
+}
+
+
+.cat-bell-content .project-link {
+    color: #111;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-decoration: none;
+}
+
+
+.cat-bell-content .project-link:hover {
+    text-decoration: underline;
+}
+
+
+.cat-bell-content .project-description {
+    max-width: 1000px;
+
+    margin:
+        0 0 50px;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   CAT BELL IMAGES
+   ===================================================== */
+
+.cat-bell-images {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 55px;
+
+    padding-bottom: 30px;
+}
+
+
+.cat-bell-image {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.cat-bell-image img {
+    max-width: 700px;
+
+    width: auto;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+.cat-bell-image.logo-image img {
+    width: 300px;
+
+    max-width: 80%;
+}
+
+
+.cat-bell-image.bell-image img {
+    width: 180px;
+
+    max-width: 60%;
+}
+
+
+.cat-bell-image.angel-image img {
+    width: 280px;
+
+    max-width: 70%;
+}
+
+
+/* =====================================================
+   CAT BELL PHONE SCREENSHOTS
+   ===================================================== */
+
+/*
+    The six phone screenshots are arranged in two rows
+    of three images:
+
+        PHONE        WELCOME        ADD YOUR CAT
+
+        ADD YOUR CAT 2    ANGELIN    ANGEL FRIEND
+*/
+
+.cat-bell-mockup-row,
+.cat-bell-lower-row {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 35px;
+
+    align-items: start;
+
+    justify-items: center;
+
+    margin-top: 25px;
+}
+
+
+.cat-bell-mockup-row .mockup-image,
+.cat-bell-lower-row .mockup-image {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+.cat-bell-mockup-row .mockup-image img,
+.cat-bell-lower-row .mockup-image img {
+    width: 190px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   BLÅ SOL PROJECT IMAGES
+   ===================================================== */
+
+.bla-sol-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+
+.bla-sol-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bla-sol-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* TIMETABLE, 404 AND MAP */
+
+/*
+   All three Blå Sol images use the same visual width.
+   This keeps the project page consistent and prevents
+   the 404 image from looking too tiny.
+*/
+
+.bla-sol-timetable img,
+.bla-sol-404 img,
+.bla-sol-map img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/*
+   Keep this rule in case the HTML still has the old
+   phone-row wrapper around 404.png.
+*/
+
+.bla-sol-phone-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 500px;
+    gap: 35px;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.bla-sol-phone-image {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+.bla-sol-phone-image img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   HIDE MY HOBBIES DESKTOP FOLDER FOR NOW
+   ===================================================== */
+
+/*
+   The Hobbies project is still kept in the HTML.
+   This only hides the folder from the desktop for now.
+*/
+
+.icon-hobbies {
+    display: none;
+}
+
+
+/* =====================================================
+   MY HOBBIES FOLDERS
+   ===================================================== */
+
+.hobbies-content {
+    padding: 40px;
+}
+
+
+.hobby-folders {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 45px;
+
+    padding: 10px;
+}
+
+
+.hobby-folder {
+    position: relative;
+
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    width: 100px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 15px;
+
+    color: #111;
+
+    cursor: pointer;
+
+    z-index: 1;
+}
+
+
+.folder-icon {
+    position: relative;
+
+    width: 72px;
+
+    height: 54px;
+
+    background: #4aa8e8;
+
+    border-radius: 5px;
+
+    box-shadow:
+        inset 0 -3px 0 rgba(0, 0, 0, 0.08),
+        0 2px 4px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.15s ease;
+}
+
+
+.folder-icon::before {
+    content: "";
+
+    position: absolute;
+
+    top: -7px;
+    left: 5px;
+
+    width: 27px;
+
+    height: 10px;
+
+    background: #4aa8e8;
+
+    border-radius:
+        4px 4px 0 0;
+}
+
+
+.folder-icon::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    height: 45px;
+
+    background: #5bb4ee;
+
+    border-radius: 5px;
+}
+
+
+.hobby-folder:hover .folder-icon {
+    transform:
+        scale(1.06);
+}
+
+
+.hobby-folder:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   HOBBY WINDOWS
+   ===================================================== */
+
+.hobby-sub-window {
+    width:
+        min(900px, 80vw);
+
+    height:
+        min(600px, 70vh);
+}
+
+
+/* =====================================================
+   MOBILE WINDOWS
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .portfolio-window {
+        top: 6%;
+
+        width: 92vw;
+
+        height: 70vh;
+
+        border-radius: 12px;
+    }
+
+
+    .window-header {
+        height: 44px;
+    }
+
+
+    .window-header > span {
+        font-size: 17px;
+    }
+
+
+    .window-header::before {
+        left: 14px;
+
+        top: 15px;
+
+        width: 12px;
+
+        height: 12px;
+
+        box-shadow:
+            20px 0 0 #febc2e,
+            40px 0 0 #28c840;
+    }
+
+
+    .close-window {
+        top: 5px;
+
+        left: 5px;
+
+        width: 30px;
+
+        height: 30px;
+    }
+
+
+    .window-content {
+        height:
+            calc(100% - 44px);
+    }
+
+
+    /* =================================================
+       BLÅ SOL MOBILE
+       ================================================= */
+
+    .bla-sol-project-window {
+        width: 92vw;
+
+        height: 70vh;
+    }
+
+
+    .bla-sol-content {
+        padding:
+            25px 20px 45px;
+    }
+
+
+    .bla-sol-content h2 {
+        font-size: 27px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .bla-sol-content .project-subtitle {
+        font-size: 15px;
+    }
+
+
+    .bla-sol-content .project-info p {
+        font-size: 14px;
+    }
+
+
+    .bla-sol-content .project-link {
+        font-size: 14px;
+    }
+
+
+    .bla-sol-content .project-description {
+        font-size: 14px;
+
+        line-height: 1.45;
+
+        font-weight: 500;
+    }
+
+
+    /* =================================================
+       CPH MOBILE
+       ================================================= */
+
+    .cph-project-window {
+        width: 92vw;
+
+        height: 70vh;
+    }
+
+
+    .cph-content {
+        padding:
+            25px 20px 45px;
+    }
+
+
+    .cph-content .project-subtitle {
+        font-size: 15px;
+    }
+
+
+    .cph-content .project-info p {
+        font-size: 14px;
+    }
+
+
+    .cph-content .project-links {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .cph-content .project-link {
+        font-size: 14px;
+    }
+
+
+    .cph-content .project-description {
+        font-size: 14px;
+
+        line-height: 1.45;
+    }
+
+
+    .cph-content h3 {
+        font-size: 18px;
+    }
+
+
+    .cph-phone-container {
+        gap: 12px;
+    }
+
+
+    .cph-phone-image {
+        width: 30%;
+    }
+
+
+    /* =================================================
+       HIDDEN PLACES MOBILE
+       ================================================= */
+
+    .hidden-places-project-window {
+        width: 92vw;
+
+        height: 70vh;
+    }
+
+
+    .hidden-places-content {
+        padding:
+            25px 20px 45px;
+    }
+
+
+    .hidden-places-content h2 {
+        font-size: 27px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .hidden-places-content .project-subtitle {
+        font-size: 15px;
+    }
+
+
+    .hidden-places-content .project-info p {
+        font-size: 14px;
+    }
+
+
+    .hidden-places-content .project-link {
+        font-size: 14px;
+    }
+
+
+    .hidden-places-content .project-description {
+        font-size: 14px;
+
+        line-height: 1.45;
+    }
+
+
+    .hidden-places-images {
+        gap: 25px;
+
+        margin-top: 30px;
+    }
+
+
+    .hidden-places-image img {
+        max-width: 100%;
+
+        border-radius: 5px;
+    }
+
+
+    /* =================================================
+       CAT BELL MOBILE
+       ================================================= */
+
+    .cat-bell-project-window {
+        width: 92vw;
+
+        height: 70vh;
+    }
+
+
+    .cat-bell-content {
+        padding:
+            25px 20px 50px;
+    }
+
+
+    .cat-bell-content h2 {
+        font-size: 27px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .cat-bell-content .project-subtitle {
+        font-size: 15px;
+    }
+
+
+    .cat-bell-content .project-info p {
+        font-size: 14px;
+    }
+
+
+    .cat-bell-content .project-link {
+        font-size: 14px;
+    }
+
+
+    .cat-bell-content .project-description {
+        font-size: 14px;
+
+        line-height: 1.45;
+
+        margin-bottom: 40px;
+
+        font-weight: 500;
+    }
+
+
+    .cat-bell-images {
+        gap: 35px;
+    }
+
+
+    .cat-bell-image img {
+        max-width: 90%;
+    }
+
+
+    .cat-bell-image.logo-image img {
+        width: 220px;
+    }
+
+
+    .cat-bell-image.bell-image img {
+        width: 130px;
+    }
+
+
+    .cat-bell-image.angel-image img {
+        width: 210px;
+    }
+
+
+    /* =================================================
+       CAT BELL PHONE SCREENSHOTS
+       ================================================= */
+
+    .cat-bell-mockup-row,
+    .cat-bell-lower-row {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 25px 10px;
+
+        margin-top: 20px;
+    }
+
+
+    .cat-bell-mockup-row .mockup-image,
+    .cat-bell-lower-row .mockup-image {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .cat-bell-mockup-row .mockup-image img,
+    .cat-bell-lower-row .mockup-image img {
+        width: 100%;
+
+        max-width: 150px;
+
+        height: auto;
+    }
+
+
+    /* =================================================
+       CAT BELL PHONE SCREENSHOTS
+       ================================================= */
+
+    /* =================================================
+       BLÅ SOL PROJECT IMAGES MOBILE
+       ================================================= */
+
+    .bla-sol-images {
+        gap: 35px;
+    }
+
+
+    .bla-sol-image img {
+        max-width: 100%;
+    }
+
+
+    .bla-sol-phone-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+    }
+
+
+    .bla-sol-phone-image {
+        width: 100%;
+    }
+
+
+    .bla-sol-phone-image img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+
+    .bla-sol-timetable img,
+    .bla-sol-404 img,
+    .bla-sol-map img {
+        width: 500px;
+        max-width: 100%;
+    }
+
+
+    /* =================================================
+       ABOUT MOBILE
+       ================================================= */
+
+    #about-window {
+        width: 92vw;
+
+        height: 75vh;
+
+        top: 5%;
+    }
+
+
+    .about-content {
+        padding:
+            30px 25px 50px;
+    }
+
+
+    .about-intro {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .about-photo {
+        width: 220px;
+
+        height: 220px;
+
+        flex: none;
+    }
+
+
+    .about-intro-text h2 {
+        font-size: 20px;
+    }
+
+
+    .about-intro-text p,
+    .about-content > p {
+        font-size: 16px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =================================================
+       NOTES MOBILE
+       ================================================= */
+
+    #notes-window {
+        width: 92vw;
+
+        height: 75vh;
+
+        top: 6%;
+    }
+
+
+    .notes-paper {
+        padding:
+            30px 24px 50px;
+    }
+
+
+    .notes-paper h1 {
+        font-size: 28px;
+    }
+
+
+    .notes-intro {
+        font-size: 15px;
+    }
+
+
+    .notes-paper h2 {
+        font-size: 20px;
+    }
+
+
+    .notes-paper h3 {
+        font-size: 18px;
+    }
+
+
+    .notes-paper p {
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+
+    .notes-skills li {
+        padding-left: 14px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .notes-skills strong {
+        font-size: 15px;
+    }
+
+
+    .notes-skills span {
+        font-size: 14px;
+    }
+
+
+    .notes-book {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .notes-book-cover {
+        width: 130px;
+
+        height: 185px;
+
+        flex: none;
+    }
+
+
+    .notes-book-text h3 {
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       HOBBIES MOBILE
+       ================================================= */
+
+    .hobbies-content {
+        padding:
+            25px 20px;
+    }
+
+
+    .hobby-folders {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, 100px);
+
+        justify-content: center;
+
+        gap:
+            35px 30px;
+    }
+
+
+    .hobby-sub-window {
+        width: 92vw;
+
+        height: 70vh;
+    }
+
+
+    /* =================================================
+       SMALL WINDOWS
+       ================================================= */
+
+    #email-window,
+    #call-window,
+    #contact-window {
+        width: 85vw;
+
+        top: 12%;
+    }
+}
+
+
+/* =====================================================
+   EXTRA SMALL SCREENS
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    #notes-window {
+        width: 94vw;
+    }
+
+
+    .notes-paper {
+        padding:
+            25px 18px 40px;
+    }
+
+
+    .notes-paper h1 {
+        font-size: 25px;
+    }
+
+
+    .notes-paper h2 {
+        font-size: 19px;
+    }
+
+
+    .notes-skills strong {
+        font-size: 14px;
+    }
+
+
+    .notes-skills span {
+        font-size: 13px;
+    }
+
+
+    .cph-phone-image {
+        width: 75%;
+    }
+
+    .cat-bell-mockup-row,
+    .cat-bell-lower-row {
+        gap: 20px 7px;
+    }
+
+
+    .cat-bell-mockup-row .mockup-image img,
+    .cat-bell-lower-row .mockup-image img {
+        max-width: 120px;
+    }
+
+}

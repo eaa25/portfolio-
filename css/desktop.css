@@ -1,0 +1,596 @@
+/* =====================================================
+   DESKTOP
+   ===================================================== */
+
+.desktop {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background: var(--green);
+}
+
+
+/* =====================================================
+   TOP MENU BAR
+   ===================================================== */
+
+.menu-bar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    background: #f7f7f7;
+
+    z-index: 100;
+}
+
+
+/* =====================================================
+   MIRRORBALL
+   ===================================================== */
+
+.menu-logo {
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+    margin: 0 12px 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+
+.menu-logo img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =====================================================
+   YOUR NAME
+   ===================================================== */
+
+/*
+   This is still a button so it can open
+   the About Me window.
+
+   All default button styling is removed so
+   there is no colored background.
+*/
+
+.menu-name {
+    margin: 0 70px 0 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+/*
+   Keep the background transparent even
+   when the button is clicked or focused.
+*/
+
+.menu-name:hover,
+.menu-name:focus,
+.menu-name:active {
+    background: transparent;
+    color: #111;
+    outline: none;
+}
+
+
+/* =====================================================
+   ABOUT / CONTACT
+   ===================================================== */
+
+.menu-link {
+    margin: 0 55px 0 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+    background: transparent;
+    color: #111;
+    outline: none;
+}
+
+
+/* =====================================================
+   RIGHT SIDE OF MENU BAR
+   ===================================================== */
+
+.menu-right {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* Wi-Fi, battery and sparkles */
+
+.status-icon {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* Date and time */
+
+#date-time {
+    margin-left: 5px;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   DESKTOP PROJECT ICONS
+   ===================================================== */
+
+.desktop-icon {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: transform 0.2s ease;
+}
+
+
+/* Project hover animation */
+
+.desktop-icon:hover {
+    transform: scale(1.06);
+}
+
+
+/* =====================================================
+   PROJECT IMAGE FRAME
+   ===================================================== */
+
+.icon-image {
+    width: 130px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border: 4px solid white;
+
+    border-radius: 4px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+
+    transition: box-shadow 0.2s ease;
+}
+
+
+.icon-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Stronger shadow on hover */
+
+.desktop-icon:hover .icon-image {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   MY HOBBIES
+   ===================================================== */
+
+.hobby-image {
+    width: 130px;
+    height: 100px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =====================================================
+   PROJECT POSITIONS
+   ===================================================== */
+
+.icon-hidden-places {
+    left: 28%;
+    top: 20%;
+}
+
+
+.icon-bla-sol {
+    right: 19%;
+    top: 7%;
+}
+
+
+.icon-hobbies {
+    right: 28%;
+    top: 47%;
+}
+
+
+.icon-cph {
+    left: 10%;
+    top: 70%;
+}
+
+
+.icon-cat {
+    right: 8%;
+    top: 65%;
+}
+
+
+/* =====================================================
+   BOTTOM DOCK
+   ===================================================== */
+
+.dock {
+    position: absolute;
+
+    bottom: 18px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 10px 14px;
+
+    background: rgba(247, 247, 247, 0.85);
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+    z-index: 200;
+}
+
+
+/* =====================================================
+   DOCK ICONS
+   ===================================================== */
+
+.dock-icon {
+    width: 68px;
+    height: 68px;
+
+    padding: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 12px;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    transition: transform 0.15s ease;
+}
+
+
+/* Dock hover */
+
+.dock-icon:hover {
+    transform: scale(1.08);
+}
+
+
+/* Dock images */
+
+.dock-icon img {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .menu-bar {
+        height: 44px;
+
+        padding: 0 10px;
+    }
+
+
+    .menu-logo {
+        width: 28px;
+        height: 28px;
+
+        margin-right: 8px;
+    }
+
+
+    .menu-logo img {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .menu-name {
+        margin-right: 20px;
+
+        font-size: 13px;
+    }
+
+
+    .menu-link {
+        margin-right: 15px;
+
+        font-size: 13px;
+    }
+
+
+    .menu-right {
+        gap: 6px;
+    }
+
+
+    .status-icon {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    #date-time {
+        font-size: 11px;
+    }
+
+
+    /* Project photos */
+
+    .icon-image {
+        width: 90px;
+        height: 70px;
+
+        border-width: 3px;
+    }
+
+
+    .hobby-image {
+        width: 90px;
+        height: 70px;
+    }
+
+
+    .desktop-icon {
+        font-size: 12px;
+
+        gap: 5px;
+    }
+
+
+    /* Dock */
+
+    .dock {
+        bottom: 10px;
+
+        gap: 5px;
+
+        padding: 7px 9px;
+
+        border-radius: 15px;
+    }
+
+
+    .dock-icon {
+        width: 56px;
+        height: 56px;
+
+        padding: 4px;
+    }
+
+
+    .dock-icon img {
+        width: 44px;
+        height: 44px;
+    }
+
+}
+
+.menu-name {
+    margin: 0 35px 0 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+
+.menu-link {
+    margin: 0 35px 0 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    appearance: none;
+}
+
+.menu-name {
+    margin: 0 35px 0 0;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #111;
+
+    font-family: "SF Pro Display", -apple-system,
+        BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    appearance: none;
+}

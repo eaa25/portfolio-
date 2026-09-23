@@ -1,0 +1,407 @@
+/*
+    ============================================
+    OPENING PAGE
+    ============================================
+
+    This is the first screen visitors see.
+
+    We are recreating the first screenshot:
+
+    - Soft white background at the top
+    - Your green #9BA67C towards the bottom
+    - Circular photo
+    - Your name
+    - "Get to know me!" button
+*/
+
+
+/*
+    ============================================
+    THE WHOLE OPENING SCREEN
+    ============================================
+*/
+
+.opening-page {
+
+    /*
+        100vw = 100% of the screen width
+
+        100vh = 100% of the screen height
+    */
+
+    width: 100vw;
+    height: 100vh;
+
+
+    /*
+        This creates the background.
+
+        "linear-gradient" means the colour
+        slowly changes from one colour to another.
+
+        Notice that we use:
+
+        var(--green)
+
+        instead of writing #9BA67C again.
+
+        This gets the colour from variables.css.
+    */
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f5f6f0 20%,
+            var(--green) 100%
+        );
+
+
+    /*
+        FLEXBOX helps us position things.
+
+        We want everything in the middle.
+    */
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    /*
+        Space between the photo,
+        name and button.
+    */
+
+    gap: 28px;
+
+
+    /*
+        Make the text centered.
+    */
+
+    text-align: center;
+
+
+    /*
+        We will use this later for
+        the transition to the desktop.
+    */
+
+    transition: opacity 0.6s ease;
+}
+
+
+
+/*
+    ============================================
+    PHOTO
+    ============================================
+*/
+
+.profile-placeholder {
+
+    /*
+        Size of the circle.
+    */
+
+    width: 420px;
+    height: 420px;
+
+
+    /*
+        If the screen is smaller,
+        the circle becomes smaller too.
+    */
+
+    max-width: 65vw;
+    max-height: 65vw;
+
+
+    /*
+        This turns a square into a circle.
+    */
+
+    border-radius: 50%;
+
+
+    /*
+        Photo container.
+    */
+
+    background: #d9ddd0;
+
+
+    /*
+        Very subtle border around the circle.
+    */
+
+    border: 2px solid rgba(0, 0, 0, 0.15);
+
+
+    /*
+        Put the photo exactly
+        in the middle.
+    */
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    /*
+        Hide anything that goes
+        outside the circle.
+
+        This is important because
+        your photo needs to stay circular.
+    */
+
+    overflow: hidden;
+
+
+    /*
+        Slight shadow underneath the circle.
+    */
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/*
+    ============================================
+    PHOTO IMAGE
+    ============================================
+*/
+
+.profile-placeholder img {
+
+    /*
+        Make the image fill
+        the whole circle.
+    */
+
+    width: 100%;
+    height: 100%;
+
+
+    /*
+        Remove any small gaps
+        underneath the image.
+    */
+
+    display: block;
+
+
+    /*
+        Cover the whole circle
+        without stretching the photo.
+    */
+
+    object-fit: cover;
+}
+
+
+
+/*
+    ============================================
+    YOUR NAME
+    ============================================
+*/
+
+.opening-page h1 {
+
+    /*
+        clamp() means:
+
+        "Make the text responsive."
+
+        It won't become ridiculously
+        small or ridiculously large.
+    */
+
+    font-size: clamp(38px, 4vw, 58px);
+
+
+    /*
+        Bold text.
+    */
+
+    font-weight: 700;
+}
+
+
+
+/*
+    ============================================
+    GET TO KNOW ME BUTTON
+    ============================================
+*/
+
+.enter-button {
+
+    /*
+        YOUR GREEN!
+
+        This uses #9BA67C from variables.css.
+    */
+
+    background: var(--green);
+
+
+    /*
+        White text.
+    */
+
+    color: white;
+
+
+    /*
+        Space inside the button.
+
+        First number = top/bottom
+        Second number = left/right
+    */
+
+    padding: 13px 75px;
+
+
+    /*
+        Slightly rounded corners.
+    */
+
+    border-radius: 5px;
+
+
+    /*
+        Text size.
+    */
+
+    font-size: 22px;
+
+
+    /*
+        Small shadow underneath the button.
+    */
+
+    box-shadow:
+        0 4px 7px rgba(0, 0, 0, 0.2);
+
+
+    /*
+        Makes the hover animation smooth.
+    */
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+
+/*
+    ============================================
+    BUTTON HOVER
+    ============================================
+
+    ":hover" means:
+
+    "What should happen when the mouse
+    is over the button?"
+*/
+
+.enter-button:hover {
+
+    /*
+        Move the button slightly upwards.
+    */
+
+    transform: translateY(-2px);
+
+
+    /*
+        Make the shadow slightly stronger.
+    */
+
+    box-shadow:
+        0 7px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+
+/*
+    ============================================
+    OPENING PAGE FADE
+    ============================================
+
+    JavaScript will add "fade-out"
+    when the button is clicked.
+*/
+
+.opening-page.fade-out {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+
+/*
+    ============================================
+    PHONE / SMALL SCREEN
+    ============================================
+*/
+
+@media (max-width: 600px) {
+
+    /*
+        Make the photo smaller on phones.
+    */
+
+    .profile-placeholder {
+
+        width: 280px;
+        height: 280px;
+
+    }
+
+
+    /*
+        Make the button smaller too.
+    */
+
+    .enter-button {
+
+        padding: 12px 40px;
+
+        font-size: 18px;
+
+    }
+
+}
+
+
+/* =====================================================
+   OPENING PAGE FONT
+   ===================================================== */
+
+.opening-page,
+.opening-page h1,
+.opening-page button {
+
+    font-family:
+        "SF Pro Display",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        sans-serif;
+}

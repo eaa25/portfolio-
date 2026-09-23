@@ -1,0 +1,30 @@
+/*
+    RESET CSS
+
+    Browsers automatically add some spacing
+    to elements like headings and paragraphs.
+
+    This removes that default styling so
+    we have full control over the design.
+*/
+
+
+/* Apply these rules to EVERYTHING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+    Buttons normally have their own browser styling.
+
+    We will design them ourselves.
+*/
+
+button {
+    font: inherit;
+    border: none;
+}

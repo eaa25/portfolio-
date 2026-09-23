@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Magdalena Szymanska — Portfolio
+    </title>
+
+    <!-- FAVICON -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="assets/images/mirrorball.png"
+    >
+
+
+    <!-- CSS FILES -->
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/global.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/opening.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/desktop.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/windows.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         OPENING PAGE
+         ===================================================== -->
+
+    <main
+        id="opening-page"
+        class="opening-page"
+    >
+
+        <div class="profile-placeholder">
+
+            <img
+                src="assets/images/madzia1.png"
+                alt="Magdalena Szymanska"
+            >
+
+        </div>
+
+
+        <h1>
+            Magdalena Szymanska
+        </h1>
+
+
+        <button
+            id="enter-button"
+            class="enter-button"
+        >
+            Get to know me!
+        </button>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         DESKTOP
+         ===================================================== -->
+
+    <main
+        id="desktop"
+        class="desktop hidden"
+    >
+
+
+        <!-- =================================================
+             TOP MENU BAR
+             ================================================= -->
+
+        <header class="menu-bar">
+
+
+            <!-- MIRRORBALL -->
+
+            <button
+                class="menu-logo"
+                title="Home"
+            >
+
+                <img
+                    src="assets/images/mirrorball.png"
+                    alt="Mirrorball"
+                >
+
+            </button>
+
+
+
+            <!-- NAME -->
+
+            <button
+                class="menu-name"
+                data-window="about-window"
+            >
+
+                Magdalena Szymanska
+
+            </button>
+
+
+
+            <!-- ABOUT ME -->
+
+            <button
+                class="menu-link"
+                data-window="about-window"
+            >
+
+                About me
+
+            </button>
+
+
+
+            <!-- CONTACT -->
+
+            <button
+                class="menu-link"
+                data-window="contact-window"
+            >
+
+                Contact
+
+            </button>
+
+
+
+            <!-- RIGHT SIDE OF MENU -->
+
+            <div class="menu-right">
+
+                <img
+                    src="assets/images/wifi.png"
+                    alt="Wi-Fi"
+                    class="status-icon"
+                >
+
+                <img
+                    src="assets/images/battery.png"
+                    alt="Battery"
+                    class="status-icon"
+                >
+
+                <img
+                    src="assets/images/sparkles.png"
+                    alt="Sparkles"
+                    class="status-icon"
+                >
+
+                <span id="date-time">
+                    Loading...
+                </span>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             DESKTOP PROJECT ICONS
+             ================================================= -->
+
+
+        <!-- HIDDEN PLACES -->
+
+        <button
+            class="desktop-icon icon-hidden-places"
+            data-window="hidden-places-window"
+        >
+
+            <div class="icon-image">
+
+                <img
+                    src="assets/images/visitnature.png"
+                    alt="Hidden Places"
+                >
+
+            </div>
+
+            <span>
+                Hidden Places
+            </span>
+
+        </button>
+
+
+
+        <!-- BLÅ SOL -->
+
+        <button
+            class="desktop-icon icon-bla-sol"
+            data-window="bla-sol-window"
+        >
+
+            <div class="icon-image">
+
+                <img
+                    src="assets/images/blaasol.png"
+                    alt="Blå Sol"
+                >
+
+            </div>
+
+            <span>
+                Blå Sol
+            </span>
+
+        </button>
+
+
+
+        <!-- MY HOBBIES -->
+
+        <button
+            class="desktop-icon icon-hobbies"
+            data-window="hobbies-window"
+        >
+
+            <img
+                src="assets/images/hobbyfolder.png"
+                alt="My hobbies"
+                class="hobby-image"
+            >
+
+            <span>
+                My hobbies
+            </span>
+
+        </button>
+
+
+
+        <!-- CPH FASHION WEEK -->
+
+        <button
+            class="desktop-icon icon-cph"
+            data-window="cph-window"
+        >
+
+            <div class="icon-image">
+
+                <img
+                    src="assets/images/cphfw.png"
+                    alt="CPH Fashion Week"
+                >
+
+            </div>
+
+            <span>
+                CPH Fashion Week
+            </span>
+
+        </button>
+
+
+
+        <!-- CAT BELL -->
+
+        <button
+            class="desktop-icon icon-cat"
+            data-window="cat-bell-window"
+        >
+
+            <div class="icon-image">
+
+                <img
+                    src="assets/images/catbell.png"
+                    alt="Cat Bell"
+                >
+
+            </div>
+
+            <span>
+                Cat Bell
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             BOTTOM DOCK
+             ================================================= -->
+
+        <nav
+            class="dock"
+            aria-label="Applications"
+        >
+
+
+            <!-- ABOUT ME -->
+
+            <button
+                class="dock-icon"
+                title="About me"
+                data-window="about-window"
+            >
+
+                <img
+                    src="assets/images/id.png"
+                    alt="About me"
+                >
+
+            </button>
+
+
+
+            <!-- EMAIL -->
+
+            <button
+                class="dock-icon"
+                title="E-mail me"
+                data-window="email-window"
+            >
+
+                <img
+                    src="assets/images/emailme.png"
+                    alt="E-mail me"
+                >
+
+            </button>
+
+
+
+            <!-- PHONE -->
+
+            <button
+                class="dock-icon"
+                title="Call me"
+                data-window="call-window"
+            >
+
+                <img
+                    src="assets/images/callme.png"
+                    alt="Call me"
+                >
+
+            </button>
+
+
+
+            <!-- NOTES -->
+
+            <button
+                class="dock-icon"
+                title="Notes"
+                data-window="notes-window"
+            >
+
+                <img
+                    src="assets/images/notes.png"
+                    alt="Notes"
+                >
+
+            </button>
+
+
+
+            <!-- LINKEDIN -->
+
+            <button
+                class="dock-icon"
+                title="LinkedIn"
+                id="linkedin-button"
+            >
+
+                <img
+                    src="assets/images/linkedin.png"
+                    alt="LinkedIn"
+                >
+
+            </button>
+
+        </nav>
+
+
+
+        <!-- =====================================================
+             HIDDEN PLACES WINDOW
+             ===================================================== -->
+
+        <section
+            id="hidden-places-window"
+            class="portfolio-window hidden-places-project-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Hidden Places
+                </span>
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div
+                class="window-content hidden-places-content"
+            >
+
+                <h2>
+                    Hidden Places - Relaxation in Nature
+                </h2>
+
+
+                <p class="project-subtitle">
+
+                    Designing a website guide with three hidden
+                    places of my choice
+
+                </p>
+
+
+                <div class="project-info">
+
+                    <p>
+
+                        <strong>
+                            Year:
+                        </strong>
+
+                        2025
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Software:
+                        </strong>
+
+                        Figma, HTML, CSS, JavaScript
+
+                    </p>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a
+                        href="https://www.figma.com/design/MRuQYAHaG4TlEmMLTEjoJP/Untitled?node-id=0-1&t=f4gtQ6b4gnCUPlZw-0"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view Figma prototype
+                    </a>
+
+
+                    <a
+                        href="https://eaa25.github.io/hidden-places-final/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view Coded version
+                    </a>
+
+
+                    <a
+                        href="https://www.youtube.com/watch?v=qw6zfyZDFuw"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to watch video presentation
+                        of the project
+                    </a>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    The goal of this project was to introduce
+                    three of my favourite places in Aarhus to
+                    someone who would enjoy them. I chose
+                    relaxation in nature as the topic of my
+                    project and decided to invite the users on
+                    a journey to Bellevue Beach, Marselisborg
+                    Palace Gardens and Brabrand Lake. I designed
+                    the website so it’s easy to navigate and
+                    looks similar to other traveling websites.
+                    The subpages are meant to resemble a
+                    whiteboard with notes about the place, and
+                    some photos too.
+
+                </p>
+
+                <p class="project-description"> First, I wanted the user to see a big hero image that tells the vibe of the project - relax and nature.</p>
+
+
+                <div class="hidden-places-images">
+
+                    <div class="hidden-places-image">
+
+                        <img
+                            src="assets/images/frontpage.png"
+                            alt="Hidden Places front page"
+                        >
+
+                    </div>
+<p class="project-description"> Then, I wanted the user to see a simple screen with all the necessary info about each place and some small interesting details like songs connected to the place or what can be found there. </p>
+
+                    <div class="hidden-places-image">
+
+                        <img
+                            src="assets/images/bellevue.png"
+                            alt="Bellevue Beach website"
+                        >
+
+                    </div>
+
+
+                    <div class="hidden-places-image">
+
+                        <img
+                            src="assets/images/marselisborg.png"
+                            alt="Marselisborg website"
+                        >
+
+                    </div>
+<p class="project-description"> The whole project uses photos taken by me.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             BLÅ SOL WINDOW
+             ===================================================== -->
+
+        <section
+            id="bla-sol-window"
+            class="portfolio-window bla-sol-project-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Blå Sol
+                </span>
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content bla-sol-content">
+
+
+                <h2>
+                    Blå Sol Festival
+                </h2>
+
+
+                <p class="project-subtitle">
+
+                    Expanding the existing festival app by extra
+                    functionalities - group project
+
+                </p>
+
+
+                <div class="project-info">
+
+                    <p>
+
+                        <strong>
+                            Year:
+                        </strong>
+
+                        2026
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Software:
+                        </strong>
+
+                        Figma, HTML, CSS, JavaScript
+
+                    </p>
+
+                </div>
+
+
+                <div class="project-links">
+
+
+                    <a
+                        href="https://www.figma.com/design/tGT7ePOfaHcQrgAtFzRVKN/bI%C3%A5-sol?node-id=0-1&t=tx7scDJH4k%7CL27H2-1%7C"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view Figma prototype
+                    </a>
+
+
+                    <a
+                        href="https://eaa25.github.io/blaasol/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view Coded version
+                    </a>
+
+
+                    <a
+                        href="https://github.com/eaa25/blaasol/tree/main"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view GitHub
+                    </a>
+
+
+                    <a
+                        href="figma.com/board/dxAcoMJXKqKM1xeOlVYdIO/blå-sol?t=hpAEWuS4uFKl0lOe-0"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view FigJam
+                    </a>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    For this project, my group decided to add extra functionalities to the already existing Blå Sol festival app. We worked on designing an interactive map where people can not only find their way around the festival grounds more easily but also share their location with friends. That addition helps festival goers enjoy their time at the event without worrying about getting lost. <br>
+                    My main input into the project was coming up with a shared group schedule design, and bringing the idea of the 404 page. I also added some small details like starting the project with a phone lock screen to keep the project presentation even more real and mobile-like.
+
+                </p>
+
+
+                <div class="bla-sol-images">
+
+                    <p class="project-description"> The schedule page works in the way that each app user creates their profile and connects with their friends. Then after liking artists on the schedule page, users get a group schedule generated based on who was liked by their friends. That way, festival goers get a quick overview of the concerts, which they can use during the festival.</p>
+
+                    <div class="bla-sol-image bla-sol-timetable">
+                        <img
+                            src="assets/images/timetable.png"
+                            alt="Blå Sol timetable"
+                        >
+                    </div>
+
+                    <p class="project-description"> For the starting page, since Blå Sol festival is based in Randers, I wanted the project to have this realistic touch of going through the phone of someone from the city. Therefore, I made the lockscreen to be the logo of the football team from Randers.</p>
+                    <div class="bla-sol-image bla-sol-404">
+                        <img
+                            src="assets/images/404.png"
+                            alt="Blå Sol 404 page"
+                        >
+                    </div>
+<p class="project-description"> Lastly, I would like to show some mockups of the most important part of the project, which was the map. On the map, users can see their friends and their locations. We use the real map of the festival to make it more accurate and easy to find their way back to each other in case they get separated. My group decided to use that kind of a map, since festivals often happen on fields, which are not that accurate on Google or Apple Maps.</p>
+                    <div class="bla-sol-image bla-sol-map">
+                        <img
+                            src="assets/images/map.png"
+                            alt="Blå Sol map"
+                        >
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MY HOBBIES WINDOW
+             ===================================================== -->
+
+        <section
+            id="hobbies-window"
+            class="portfolio-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    My hobbies!
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content hobbies-content">
+
+
+                <div class="hobby-folders">
+
+
+                    <!-- CATS -->
+
+                    <button
+                        class="desktop-icon hobby-folder"
+                        data-window="cats-window"
+                    >
+
+                        <div class="folder-icon"></div>
+
+                        <span>
+                            Cats
+                        </span>
+
+                    </button>
+
+
+                    <!-- CONCERTS -->
+
+                    <button
+                        class="desktop-icon hobby-folder"
+                        data-window="concerts-window"
+                    >
+
+                        <div class="folder-icon"></div>
+
+                        <span>
+                            Concerts
+                        </span>
+
+                    </button>
+
+
+                    <!-- EVENTS -->
+
+                    <button
+                        class="desktop-icon hobby-folder"
+                        data-window="events-window"
+                    >
+
+                        <div class="folder-icon"></div>
+
+                        <span>
+                            Events
+                        </span>
+
+                    </button>
+
+
+                    <!-- TUFTING -->
+
+                    <button
+                        class="desktop-icon hobby-folder"
+                        data-window="tufting-window"
+                    >
+
+                        <div class="folder-icon"></div>
+
+                        <span>
+                            Tufting
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CATS WINDOW
+             ===================================================== -->
+
+        <section
+            id="cats-window"
+            class="portfolio-window hobby-sub-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Cats
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h2>
+                    Cats
+                </h2>
+
+
+                <p>
+                    My cats and cat-related projects will go here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONCERTS WINDOW
+             ===================================================== -->
+
+        <section
+            id="concerts-window"
+            class="portfolio-window hobby-sub-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Concerts
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h2>
+                    Concerts
+                </h2>
+
+
+                <p>
+                    My concerts and music memories will go here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EVENTS WINDOW
+             ===================================================== -->
+
+        <section
+            id="events-window"
+            class="portfolio-window hobby-sub-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Events
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h2>
+                    Events
+                </h2>
+
+
+                <p>
+                    My events and experiences will go here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             TUFTING WINDOW
+             ===================================================== -->
+
+        <section
+            id="tufting-window"
+            class="portfolio-window hobby-sub-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Tufting
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h2>
+                    Tufting
+                </h2>
+
+
+                <p>
+                    My tufting projects will go here.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CPH FASHION WEEK WINDOW
+             ===================================================== -->
+
+        <section
+            id="cph-window"
+            class="portfolio-window cph-project-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    COPENHAGEN FASHION WEEK
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content cph-content">
+
+
+                <p class="project-subtitle">
+
+                    Designing an info screen concept for
+                    Copenhagen Fashion Week AW26
+
+                </p>
+
+
+                <div class="project-info">
+
+                    <p>
+
+                        <strong>
+                            Year:
+                        </strong>
+
+                        2025
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Software:
+                        </strong>
+
+                        Figma, HTML, CSS, JavaScript
+
+                    </p>
+
+                </div>
+
+
+                <div class="project-links">
+
+                    <a
+                        href="https://www.figma.com/design/DdQPSBbKisGeVAVB7dE6AF/CPHFW?node-id=912-435&p=f&t=u2MlOfZ1XQ5sJHna-0"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Figma prototype
+                    </a>
+
+
+                    <a
+                        href="https://eaa25.github.io/cphfw/"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Coded version
+                    </a>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    My main goal for this project was to come up
+                    with something extraordinary and different,
+                    that no other game would create. I came up
+                    with the idea of creating a dress-up game
+                    inspired by Cher’s digital wardrobe in the
+                    movie Clueless. Then, I worked on transferring
+                    the idea into the info screen for Copenhagen
+                    Fashion Week.
+
+                </p>
+
+
+                <h3>
+                    Inspiration:
+                </h3>
+
+
+                <div class="cph-image-container">
+
+                    <img
+                        src="assets/images/clueless.png"
+                        alt="Clueless inspiration"
+                        class="cph-project-image"
+                    >
+
+                </div>
+
+
+                <h3>
+                    Info screen:
+                </h3>
+
+
+                <div class="cph-image-container">
+
+                    <img
+                        src="assets/images/infoscreen.png"
+                        alt="Copenhagen Fashion Week info screen"
+                        class="cph-project-image"
+                    >
+
+                </div>
+
+
+                <h3>
+                    Mobile dress-up game:
+                </h3>
+
+
+                <div class="cph-phone-container">
+
+                    <img
+                        src="assets/images/girl.png"
+                        alt="Mobile dress-up game"
+                        class="cph-phone-image"
+                    >
+
+
+                    <img
+                        src="assets/images/man.png"
+                        alt="Mobile dress-up game"
+                        class="cph-phone-image"
+                    >
+
+
+                    <img
+                        src="assets/images/outfitinfo.png"
+                        alt="Outfit information"
+                        class="cph-phone-image"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CAT BELL WINDOW
+             ===================================================== -->
+
+        <section
+            id="cat-bell-window"
+            class="portfolio-window cat-bell-project-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Cat Bell
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content cat-bell-content">
+
+
+                <h2>
+                    Cat Bell
+                </h2>
+
+
+                <p class="project-subtitle">
+
+                    Quick few days project where I got to use
+                    my imagination and create a product concept
+
+                </p>
+
+
+                <div class="project-info">
+
+                    <p>
+
+                        <strong>
+                            Year:
+                        </strong>
+
+                        2026
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            Software:
+                        </strong>
+
+                        Figma
+
+                    </p>
+
+                </div>
+
+
+                <div class="project-links">
+
+
+                    <a
+                        href="https://www.figma.com/design/nTJurqxAhwZ0B5AX29MgZ4/Untitled?node-id=0-1&t=Egcns4DZZKEGw24A-0"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to view Figma prototype
+                    </a>
+
+
+                    <a
+                        href="https://www.youtube.com/watch?v=FxmNOMSI9-8"
+                        class="project-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Click to watch video presentation
+                        of the project
+                    </a>
+
+                </div>
+
+
+                <p class="project-description">
+
+                    This project was a homework task from the design course. I was supposed to come up with a digital solution that would help with an everyday problem or make something easier. I immediately thought about my cat and how I never know when she comes back home and waits for me to let her inside. That's how I created Cat Bell.
+
+                </p>
+
+
+                <div class="cat-bell-images">
+<p class="project-description"> First, I designed the logo by mixing a cat icon with a camera icon. I added the green color which I sampled from my cat's eye colour in one of her photos.</p>
+
+                    <div class="cat-bell-image logo-image">
+
+                        <img
+                            src="assets/images/logo.png"
+                            alt="Cat Bell logo"
+                        >
+
+                    </div>
+
+<p class="project-description"> Then I made a simple camera design in the same green color and put the logo on it.</p>
+                    <div class="cat-bell-image bell-image">
+
+                        <img
+                            src="assets/images/bell.png"
+                            alt="Cat Bell"
+                        >
+
+                    </div>
+
+<p class="project-description"> Later, I created an image that resembles a camera scanning my cat's face, just to visualise how the whole thing would work.</p>
+                    <div class="cat-bell-image angel-image">
+
+                        <img
+                            src="assets/images/Angel.png"
+                            alt="Angel cat"
+                        >
+
+                    </div>
+<p class="project-description"> And lastly, I created some Figma mockups showing how the app could look. They start with the notification design and move on to opening the app for the first time and then adding your cats.</p>
+
+                    <div class="cat-bell-mockup-row">
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/PHONE.png"
+                                alt="Cat Bell phone mockup"
+                            >
+
+                        </div>
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/welcome screen.png"
+                                alt="Cat Bell welcome screen"
+                            >
+
+                        </div>
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/add your cat screen.png"
+                                alt="Add your cat screen"
+                            >
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="cat-bell-lower-row">
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/add your cat screen copy.png"
+                                alt="Add your cat screen"
+                            >
+
+                        </div>
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/angelin.png"
+                                alt="Angelin screen"
+                            >
+
+                        </div>
+
+
+                        <div class="cat-bell-image mockup-image">
+
+                            <img
+                                src="assets/images/angelfriend.png"
+                                alt="Angelfriend screen"
+                            >
+
+                        </div>
+
+                </div>
+
+                <p class="project-description">
+                    As mentioned before, this project was just a quick homework task, but I wanted to include it in my portfolio because I think it really shows my creativity!
+                </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT ME WINDOW
+             ===================================================== -->
+
+        <section
+            id="about-window"
+            class="portfolio-window about-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    About me!
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content about-content">
+
+
+                <div class="about-intro">
+
+
+                    <div class="about-photo">
+
+                        <img
+                            src="assets/images/madzia.png"
+                            alt="Magdalena"
+                        >
+
+                    </div>
+
+
+                    <div class="about-intro-text">
+
+
+                        <h2>
+                            Hi! Welcome to my portfolio!
+                        </h2>
+
+
+                        <p>
+
+                            My name is Magdalena Szymanska,
+                            I’m 26 years old and originally
+                            from Poland. I’m currently in my
+                            second year of the Multimedia
+                            Design programme at Business
+                            Academy Aarhus.
+
+                        </p>
+
+
+                        <p>
+
+                            My journey with design started
+                            when I was a kid and my parents
+                            got their first computer. My dad
+                            would draw simple houses in
+                            Microsoft Paint, and I could spend
+                            hours colouring them. As I got
+                            older, I started creating my own
+                            digital paintings and PowerPoint
+                            presentations about literally everything.
+
+                        </p>
+
+
+                    </div>
+
+                </div>
+
+
+                <p>
+
+                    My curiosity for visual design continued
+                    into my teenage years. I loved photographing
+                    anything I found beautiful or interesting—
+                    from sunsets to buildings in places I
+                    visited. I also started experimenting with
+                    Photoshop and Canva, slowly discovering how
+                    much I enjoyed creating and working with
+                    visuals.
+
+                </p>
+
+
+                <p>
+
+                    Another important part of my story is
+                    Denmark. When I was around 10, my aunt
+                    moved here, and my parents started bringing
+                    me to Denmark every summer. From then on,
+                    I knew that one day I wanted to live and
+                    study here. I started working towards that
+                    goal when I was 14, taking extra English
+                    classes and preparing for the language tests
+                    I would eventually need to apply to schools
+                    in Denmark.
+
+                </p>
+
+
+                <p>
+
+                    When the time came to choose my education,
+                    I decided to study Marketing Management at
+                    IBA in Kolding. At the time, Multimedia
+                    Design felt a little intimidating, so I
+                    chose a path that felt more familiar.
+
+                </p>
+
+
+                <p>
+
+                    After moving to Denmark, I also started
+                    learning Danish. I’m still working on the
+                    speaking part, but I’m slowly getting there!
+
+                </p>
+
+
+                <p>
+
+                    A few years after graduating, I decided
+                    it was time to take the risk and return to
+                    what I had always been drawn to: design.
+
+                </p>
+
+
+                <p>
+
+                    And now, here I am—halfway through my
+                    Multimedia Design journey, combining my
+                    background in marketing with my passion for
+                    visual communication, creativity, and
+                    digital design.
+
+                </p>
+
+
+                <p>
+
+                    I’m excited to see where this journey
+                    takes me next!
+
+                </p>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             EMAIL WINDOW
+             ===================================================== -->
+
+        <section
+            id="email-window"
+            class="portfolio-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    E-mail me!
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <div class="contact-window-content">
+
+                    <p>
+
+                        <strong>
+                            My e-mail address:
+                        </strong>
+
+
+                        <a
+                            href="mailto:szymanskamagdalena13@gmail.com"
+                        >
+                            szymanskamagdalena13@gmail.com
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PHONE WINDOW
+             ===================================================== -->
+
+        <section
+            id="call-window"
+            class="portfolio-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Call me!
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <div class="contact-window-content">
+
+                    <p>
+
+                        <strong>
+                            My phone number:
+                        </strong>
+
+
+                        <a
+                            href="tel:+4571554099"
+                        >
+                            +45 71 55 40 99
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             NOTES WINDOW
+             ===================================================== -->
+
+        <section
+            id="notes-window"
+            class="portfolio-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Notes
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <article class="notes-paper">
+
+
+                    <h1>
+                        My skills &amp; strengths
+                    </h1>
+
+
+                    <p class="notes-intro">
+
+                        I am a strategic thinker who enjoys solving
+                        problems, working with others, and creating
+                        high-quality work. I am especially motivated
+                        by challenges that allow me to learn and grow.
+
+                    </p>
+
+
+                    <h2>
+                        My skills
+                    </h2>
+
+
+                    <ul class="notes-skills">
+
+
+                        <li>
+
+                            <strong>
+                                Thinking outside the box
+                            </strong>
+
+                            <span>
+
+                                I enjoy approaching problems from
+                                different perspectives and finding
+                                creative solutions.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Strategic thinking
+                            </strong>
+
+                            <span>
+
+                                My background in Marketing Management
+                                has taught me to think about the bigger
+                                picture and how different decisions
+                                connect to an overall goal.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Collaboration
+                            </strong>
+
+                            <span>
+
+                                I enjoy working with others, listening
+                                to different ideas, and contributing
+                                to a positive team environment.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Communication
+                            </strong>
+
+                            <span>
+
+                                I care about communicating ideas clearly
+                                and making sure that people feel heard
+                                and included.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Attention to detail
+                            </strong>
+
+                            <span>
+
+                                I take pride in my work and like noticing
+                                the small details that can make a project
+                                feel more complete.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Quality-focused
+                            </strong>
+
+                            <span>
+
+                                I care about delivering work that I can
+                                be proud of and I try to identify and
+                                correct mistakes rather than overlooking
+                                them.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Adaptability
+                            </strong>
+
+                            <span>
+
+                                I enjoy learning new things and figuring
+                                out how to approach unfamiliar tasks
+                                and challenges.
+
+                            </span>
+
+                        </li>
+
+
+                        <li>
+
+                            <strong>
+                                Empathy
+                            </strong>
+
+                            <span>
+
+                                I genuinely care about other people's
+                                perspectives and try to create an
+                                environment where everyone feels
+                                comfortable contributing.
+
+                            </span>
+
+                        </li>
+
+
+                    </ul>
+
+
+                    <h2>
+                        How I think about design
+                    </h2>
+
+
+                    <p>
+
+                        I want my designs to be visually interesting,
+                        but they should also have a purpose. I like
+                        thinking about who will use something, what
+                        they need, and how I can make the experience
+                        simple and understandable.
+
+                    </p>
+
+
+                    <p>
+
+                        I enjoy combining creativity with strategy.
+                        Instead of only thinking about how something
+                        looks, I try to understand the problem first
+                        and then find a solution that makes sense for
+                        the people experiencing it.
+
+                    </p>
+
+
+                    <h2>
+                        A book that influences my designs
+                    </h2>
+
+
+                    <div class="notes-book">
+
+
+                        <div class="notes-book-cover">
+
+                            <img
+                            src="assets/images/dont-make-me-think.png"
+                                alt="Don't Make Me Think by Steve Krug"
+                            >
+
+                        </div>
+
+
+                        <div class="notes-book-text">
+
+
+                            <h3>
+
+                                Don't Make Me Think
+                                — Steve Krug
+
+                            </h3>
+
+
+                            <p>
+
+                                I was introduced to
+                                Don't Make Me Think
+                                by Steve Krug during my Marketing
+                                Management studies, and it is a book
+                                that has stayed with me.
+
+                            </p>
+
+
+                            <p>
+
+                                One of the main ideas I take from it is
+                                that good design should feel intuitive.
+                                When I work on my own designs, I try to
+                                put myself in the user's position and
+                                think about whether something is clear,
+                                understandable, and easy to navigate.
+
+                            </p>
+
+
+                            <p>
+
+                                It reminds me not to overcomplicate
+                                things just because I can. I want my
+                                designs to look good, but I also want
+                                people to understand them without
+                                having to stop and figure everything
+                                out.
+
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <h2>
+                        What matters to me
+                    </h2>
+
+
+                    <p>
+
+                        For me, good design is about finding a balance
+                        between creativity, strategy, and the people
+                        who will actually use what I create.
+
+                    </p>
+
+
+                    <p>
+
+                        I am still learning and developing my skills,
+                        but I genuinely enjoy the process of improving,
+                        experimenting, receiving feedback, and seeing
+                        an idea turn into something real.
+
+                    </p>
+
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT WINDOW
+             ===================================================== -->
+
+        <section
+            id="contact-window"
+            class="portfolio-window"
+        >
+
+            <div class="window-header">
+
+                <span>
+                    Contact me!
+                </span>
+
+
+                <button
+                    class="close-window"
+                    aria-label="Close window"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <div class="contact-window-content">
+
+
+                    <p>
+
+                        <strong>
+                            My e-mail address:
+                        </strong>
+
+
+                        <a
+                            href="mailto:szymanskamagdalena13@gmail.com"
+                        >
+                            szymanskamagdalena13@gmail.com
+                        </a>
+
+                    </p>
+
+
+                    <p>
+
+                        <strong>
+                            My phone number:
+                        </strong>
+
+
+                        <a
+                            href="tel:+4571554099"
+                        >
+                            +45 71 55 40 99
+                        </a>
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/windows.js"></script>
+
+
+</body>
+
+</html>
