@@ -796,24 +796,20 @@
    ===================================================== */
 
 /*
-   Modern phones have a dynamic browser viewport.
-   100dvh makes the portfolio follow the actual
-   visible phone height instead of the old viewport height.
+   Use the small viewport on phones.
+   This keeps the portfolio inside the safe visible
+   browser area instead of letting it grow underneath
+   the browser controls.
 */
-
-.desktop {
-    min-height: 100vh;
-    min-height: 100dvh;
-}
 
 @media (max-width: 700px) {
 
     .desktop {
         width: 100%;
-        height: 100vh;
-        height: 100dvh;
-        min-height: 100dvh;
-        max-height: 100dvh;
+        height: 100svh;
+        min-height: 100svh;
+        max-height: 100svh;
+        overflow: hidden;
     }
 
     .menu-bar {
@@ -822,6 +818,7 @@
         left: 0;
         right: 0;
         width: 100%;
+        height: 44px;
         box-sizing: border-box;
     }
 

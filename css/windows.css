@@ -2665,24 +2665,25 @@
    ===================================================== */
 
 /*
-   Use the phone's real visible viewport height.
-   This prevents portfolio windows from becoming too
-   short or too tall when the mobile browser bars move.
+   Use the small viewport on phones.
+   This is intentionally shorter than 100dvh so the
+   portfolio window stays below the browser controls
+   instead of sitting underneath them.
 */
 
 @media (max-width: 700px) {
 
     .portfolio-window {
         top: 48px;
-        height: calc(100dvh - 58px);
-        max-height: none;
+        height: calc(100svh - 68px);
+        max-height: calc(100svh - 68px);
         width: 94vw;
         max-width: 94vw;
     }
 
     .window-content {
         height: calc(100% - 44px);
-        max-height: none;
+        max-height: calc(100% - 44px);
         overflow-y: auto;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
@@ -2695,8 +2696,8 @@
     #about-window,
     #notes-window,
     .hobby-sub-window {
-        height: calc(100dvh - 58px);
-        max-height: none;
+        height: calc(100svh - 68px);
+        max-height: calc(100svh - 68px);
     }
 }
 
@@ -2706,8 +2707,8 @@
         top: 48px;
         width: 96vw;
         max-width: 96vw;
-        height: calc(100dvh - 58px);
-        max-height: none;
+        height: calc(100svh - 68px);
+        max-height: calc(100svh - 68px);
     }
 
     .bla-sol-project-window,
@@ -2719,7 +2720,7 @@
     .hobby-sub-window {
         width: 96vw;
         max-width: 96vw;
-        height: calc(100dvh - 58px);
-        max-height: none;
+        height: calc(100svh - 68px);
+        max-height: calc(100svh - 68px);
     }
 }
