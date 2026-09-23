@@ -2659,3 +2659,67 @@
         max-width: calc((100% - 12px) / 3);
     }
 }
+
+/* =====================================================
+   FINAL PHONE WINDOW HEIGHT FIX
+   ===================================================== */
+
+/*
+   Use the phone's real visible viewport height.
+   This prevents portfolio windows from becoming too
+   short or too tall when the mobile browser bars move.
+*/
+
+@media (max-width: 700px) {
+
+    .portfolio-window {
+        top: 48px;
+        height: calc(100dvh - 58px);
+        max-height: none;
+        width: 94vw;
+        max-width: 94vw;
+    }
+
+    .window-content {
+        height: calc(100% - 44px);
+        max-height: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .bla-sol-project-window,
+    .cph-project-window,
+    .hidden-places-project-window,
+    .cat-bell-project-window,
+    #about-window,
+    #notes-window,
+    .hobby-sub-window {
+        height: calc(100dvh - 58px);
+        max-height: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .portfolio-window {
+        top: 48px;
+        width: 96vw;
+        max-width: 96vw;
+        height: calc(100dvh - 58px);
+        max-height: none;
+    }
+
+    .bla-sol-project-window,
+    .cph-project-window,
+    .hidden-places-project-window,
+    .cat-bell-project-window,
+    #about-window,
+    #notes-window,
+    .hobby-sub-window {
+        width: 96vw;
+        max-width: 96vw;
+        height: calc(100dvh - 58px);
+        max-height: none;
+    }
+}
